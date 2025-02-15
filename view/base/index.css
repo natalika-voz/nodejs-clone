@@ -1,0 +1,7 @@
+@import url("./font/font.css");
+@import url("./color.css");
+@import url("/view/base/typography.css");
+
+.html {
+  font-family: "Open Sans", "system-ui", sans-serif;
+}
