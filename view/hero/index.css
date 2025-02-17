@@ -1,0 +1,25 @@
+.hero {
+  padding: 70px 20px;
+}
+
+.hero__title {
+  margin-block-start: 0;
+  margin-block-end: 16px;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 600;
+}
+
+.hero__text {
+  margin-block-start: 0;
+  margin-block-end: 32px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.hero__button {
+  display: inline-flex;
+  border-radius: 4px;
+  background-color: var(--green-600);
+}
