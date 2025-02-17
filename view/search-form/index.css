@@ -1,0 +1,20 @@
+.search-form {
+  position: relative;
+}
+.search-form__icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  width: 14px;
+  height: 14px;
+}
+
+.search-form__input {
+  padding-left: 36px;
+  padding-block: 12px;
+  width: 100%;
+  background-color: var(--neutral-100);
+  border: 1px solid var(--neutral-200);
+  border-radius: 4px;
+}
