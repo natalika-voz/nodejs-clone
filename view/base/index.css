@@ -2,6 +2,6 @@
 @import url("./color.css");
 @import url("/view/base/typography.css");
 
-.html {
+html {
   font-family: "Open Sans", "system-ui", sans-serif;
 }
