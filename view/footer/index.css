@@ -1,0 +1,33 @@
+.footer {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+}
+
+.footer__section-primary {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__link {
+  padding: 8px 12px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--neutral-800);
+}
+
+.footer__section-secondary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.footer__social {
+  text-decoration: none;
+}
+
