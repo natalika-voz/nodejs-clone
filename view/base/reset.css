@@ -58,3 +58,12 @@ select {
 :target {
   scroll-margin-block: 5ex;
 }
+
+a {
+  color: inherit;
+  text-decoration: inherit
+}
+
+blockquote, dd, dl, figure, h1, h2, h3, h4, h5, h6, hr, p, pre {
+  margin: 0;
+}
