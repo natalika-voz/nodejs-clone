@@ -1,0 +1,7 @@
+.learn__container {
+  @media (width >= 1024px) {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr 1fr;
+    gap: 48px;
+  }
+}

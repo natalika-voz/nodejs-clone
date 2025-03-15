@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./index.css" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Node Js</title>
+</head>
+<body>
+  <div id="app">
+    <header class="header">
+      <div class="header__logo-and-toggler">
+        <a class="header__logo" href="/index.html">
+          <img class="header__logo-image" src="./view/header/node-js.svg" width="80" height="24" alt="Node Js Website Logo">
+        </a>
+        <button class="header__toggle-menu" type="button" aria-label="Open mobile menu" aria-expanded="true">
+          <svg width="24" height="24" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 7H19M1 1H19M1 13H19" stroke="#2C3437" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18.7071 6.70711C19.0976 6.31658 19.0976 5.68342 18.7071 5.29289C18.3166 4.90237 17.6834 4.90237 17.2929 5.29289L12 10.5858L6.70711 5.29289C6.31658 4.90237 5.68342 4.90237 5.29289 5.29289C4.90237 5.68342 4.90237 6.31658 5.29289 6.70711L10.5858 12L5.29289 17.2929C4.90237 17.6834 4.90237 18.3166 5.29289 18.7071C5.68342 19.0976 6.31658 19.0976 6.70711 18.7071L12 13.4142L17.2929 18.7071C17.6834 19.0976 18.3166 19.0976 18.7071 18.7071C19.0976 18.3166 19.0976 17.6834 18.7071 17.2929L13.4142 12L18.7071 6.70711Z" fill="#2C3437"/>
+          </svg>
+        </button>
+
+      </div>
+      <nav class="header__nav">
+        <ul class="header__list" role="list">
+          <li>
+            <a class="header__link text-base-medium" href="#">Learn</a>
+          </li>
+          <li>
+            <a class="header__link text-base-medium" href="#">About</a>
+          </li>
+          <li>
+            <a class="header__link text-base-medium" href="#">Docs</a>
+          </li>
+          <li>
+            <a class="header__link text-base-medium" href="#">Download</a>
+          </li>
+          <li>
+            <a class="header__link text-base-medium" href="#">Blog</a>
+          </li>
+          <li>
+            <a class="header__link text-base-medium header__link--arrow" href="#">Certification</a>
+          </li>
+        </ul>
+        <div class="header__actions">
+          <form class="search-form" action="" method="GET">
+            <svg class="search-form__icon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M6.33301 0.333313C3.0193 0.333313 0.333008 3.0196 0.333008 6.33331C0.333008 9.64702 3.0193 12.3333 6.33301 12.3333C7.74968 12.3333 9.05169 11.8423 10.0781 11.0212L12.5283 13.4714C12.7886 13.7317 13.2107 13.7317 13.4711 13.4714C13.7314 13.211 13.7314 12.7889 13.4711 12.5286L11.0209 10.0784C11.842 9.05199 12.333 7.74999 12.333 6.33331C12.333 3.0196 9.64672 0.333313 6.33301 0.333313ZM1.66634 6.33331C1.66634 3.75598 3.75568 1.66665 6.33301 1.66665C8.91034 1.66665 10.9997 3.75598 10.9997 6.33331C10.9997 8.91064 8.91034 11 6.33301 11C3.75568 11 1.66634 8.91064 1.66634 6.33331Z" fill="currentColor"/>
+              </svg>
+            <input class="search-form__input" type="search" name="search" placeholder="Start typing...">
+          </form>
+          <div class="header__settings">
+            <button class="header__settings--button header__settings--toggleTheme" type="button" aria-label="Toggle dark mode">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.3332 13.2035C17.2387 13.6985 16.0237 13.974 14.7444 13.974C9.92925 13.974 6.0258 10.0706 6.0258 5.25544C6.0258 3.97612 6.30134 2.76115 6.79632 1.66666C3.77131 3.03468 1.6665 6.07891 1.6665 9.61473C1.6665 14.4299 5.56995 18.3333 10.3851 18.3333C13.9209 18.3333 16.9651 16.2285 18.3332 13.2035Z" stroke="#6E7B83" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <button class="header__settings--button header__settings--languageDropDown" type="button" aria-label="Choose language">
+              <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.49986 1.49999C7.49986 1.03975 7.12676 0.666656 6.66652 0.666656C6.20629 0.666656 5.83319 1.03975 5.83319 1.49999V2.33332H1.66653C1.20629 2.33332 0.833192 2.70642 0.833192 3.16666C0.833192 3.62689 1.20629 3.99999 1.66653 3.99999H8.56581C8.178 5.64557 7.5262 7.16393 6.64658 8.51081C5.90547 7.81512 5.27696 6.98703 4.93415 6.17566C4.75503 5.75171 4.26615 5.55324 3.8422 5.73236C3.41825 5.91148 3.21977 6.40037 3.3989 6.82432C3.86034 7.91649 4.68372 8.98412 5.64553 9.85456C4.46021 11.2554 2.99208 12.4107 1.29566 13.2537C0.883516 13.4585 0.715443 13.9587 0.920263 14.3709C1.12508 14.783 1.62524 14.9511 2.03739 14.7463C3.96747 13.7871 5.63229 12.4674 6.96951 10.8698C7.3085 11.0865 7.6518 11.2741 7.99168 11.4268C8.41149 11.6154 8.90472 11.428 9.09333 11.0082C9.28194 10.5884 9.09452 10.0951 8.6747 9.90652C8.44142 9.80171 8.20525 9.67526 7.97036 9.53078C9.06093 7.89131 9.84598 6.02471 10.2734 3.99999H11.6665C12.1268 3.99999 12.4999 3.62689 12.4999 3.16666C12.4999 2.70642 12.1268 2.33332 11.6665 2.33332H9.59695C9.58709 2.33315 9.57725 2.33315 9.56744 2.33332H7.49986V1.49999Z" fill="#6E7B83"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.2934 6.75671C13.95 6.59088 13.5497 6.59088 13.2063 6.75671C12.9076 6.90096 12.7456 7.15231 12.6652 7.28757C12.5809 7.42928 12.4944 7.61018 12.4094 7.78788L10.0164 12.7914C10.0111 12.8021 10.0059 12.8128 10.001 12.8237L8.41476 16.1404C8.21618 16.5556 8.39179 17.0532 8.80699 17.2517C9.22218 17.4503 9.71974 17.2747 9.91831 16.8595L11.2859 13.9999H16.2138L17.5814 16.8595C17.78 17.2747 18.2776 17.4503 18.6927 17.2517C19.1079 17.0532 19.2836 16.5556 19.085 16.1404L17.4988 12.8238C17.4938 12.8129 17.4887 12.8021 17.4833 12.7914L15.0903 7.78788C15.0054 7.61021 14.9189 7.42927 14.8346 7.28757C14.7541 7.15231 14.5922 6.90096 14.2934 6.75671ZM13.7499 8.84806L15.4167 12.3333H12.083L13.7499 8.84806Z" fill="#6E7B83"/>
+                </svg>
+
+            </button>
+            <a class="header__settings--button header__settings--githubLink" href="https://github.com/nodejs/node" aria-label="Node.js Github">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 0.25C4.16562 0.25 0.25 4.16562 0.25 9C0.25 12.8719 2.75469 16.1422 6.23281 17.3016C6.67031 17.3781 6.83437 17.1156 6.83437 16.8859C6.83437 16.6781 6.82344 15.9891 6.82344 15.2563C4.625 15.6609 4.05625 14.7203 3.88125 14.2281C3.78281 13.9766 3.35625 13.2 2.98438 12.9922C2.67812 12.8281 2.24063 12.4234 2.97344 12.4125C3.6625 12.4016 4.15469 13.0469 4.31875 13.3094C5.10625 14.6328 6.36406 14.2609 6.86719 14.0312C6.94375 13.4625 7.17344 13.0797 7.425 12.8609C5.47813 12.6422 3.44375 11.8875 3.44375 8.54062C3.44375 7.58906 3.78281 6.80156 4.34062 6.18906C4.25313 5.97031 3.94687 5.07344 4.42812 3.87031C4.42812 3.87031 5.16094 3.64063 6.83437 4.76719C7.53438 4.57031 8.27813 4.47187 9.02188 4.47187C9.76563 4.47187 10.5094 4.57031 11.2094 4.76719C12.8828 3.62969 13.6156 3.87031 13.6156 3.87031C14.0969 5.07344 13.7906 5.97031 13.7031 6.18906C14.2609 6.80156 14.6 7.57812 14.6 8.54062C14.6 11.8984 12.5547 12.6422 10.6078 12.8609C10.925 13.1344 11.1984 13.6594 11.1984 14.4797C11.1984 15.65 11.1875 16.5906 11.1875 16.8859C11.1875 17.1156 11.3516 17.3891 11.7891 17.3016C13.5261 16.7152 15.0355 15.5988 16.1048 14.1096C17.1741 12.6204 17.7495 10.8333 17.75 9C17.75 4.16562 13.8344 0.25 9 0.25Z" fill="#6E7B83"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="learn__container">
+      <div class="select">Select-documentation</div>
+    <main class="main--text">
+      <h1 class="h1 text-2xl-semibold">
+        <a href="#">Introduction to Node.js</a>
+      </h1>
+      <p class="text-base-regular">
+        Getting started guide to Node.js, the server-side JavaScript runtime environment. Node.js is built on top of the Google Chrome V8 JavaScript engine, and it's mainly used to create web servers - but it's not limited to just that.
+      </p>
+      <p class="text-base-regular">
+        Node.js is an open-source and cross-platform JavaScript runtime environment. It is a popular tool for almost any kind of project!
+      </p>
+      <p class="text-base-regular">
+        Node.js runs the V8 JavaScript engine, the core of Google Chrome, outside of the browser. This allows Node.js to be very performant.
+      </p>
+      <p class="text-base-regular">
+        A Node.js app runs in a single process, without creating a new thread for every request.
+        Node.js provides a set of asynchronous I/O primitives in its standard library that prevent JavaScript code from blocking and generally, libraries in Node.js are written using non-blocking paradigms, making blocking behavior the exception rather than the norm.
+      </p>
+      <p class="text-base-regular">
+        When Node.js performs an I/O operation, like reading from the network, accessing a database or the filesystem, instead of blocking the thread and wasting CPU cycles waiting, Node.js will resume the operations when the response comes back.
+      </p>
+      <p class="text-base-regular">
+        This allows Node.js to handle thousands of concurrent connections with a single server without introducing the burden of managing thread concurrency, which could be a significant source of bugs.
+      </p>
+      <p class="text-base-regular">
+        Node.js has a unique advantage because millions of frontend developers that write JavaScript for the browser are now able to write the server-side code in addition to the client-side code without the need to learn a completely different language.
+      </p>
+      <p class="text-base-regular">
+        In Node.js the new ECMAScript standards can be used without problems, as you don't have to wait for all your users to update their browsers - you are in charge of deciding which ECMAScript version to use by changing the Node.js version, and you can also enable specific experimental features by running Node.js with flags.
+      </p>
+      <div class="learn-pagination">
+        <a class="learn-pagination__link learn-pagination__link--prev" href="">Prev</a>
+        <a class="learn-pagination__link learn-pagination__link--next" href="">Next</a>
+      </div>
+    </main>
+    <div class="metabar">
+      <dl>
+        <dt class="text-sm-medium">Last Updated</dt>
+        <dd class="text-sm-regular">July 9, 2023</dd>
+
+        <dt class="text-sm-medium">Reading Time</dt>
+        <dd class="text-sm-regular">15 minutes</dd>
+
+        <dt class="text-sm-medium">Authors</dt>
+        <dd>
+          <div class="avatars">
+            <span class="avatar">
+              <a class="avatar__link" href="#" target="_blank">
+                <img src="" alt="flaviocopes">
+              </a>
+            </span>
+            <span class="avatar">
+              <a class="avatar__link" href="#" target="_blank">
+                <img src="" alt="flaviocopes">
+              </a>
+            </span>
+            <span class="avatar">
+              <a class="avatar__link" href="#" target="_blank">
+                <img src="" alt="flaviocopes">
+              </a>
+            </span>
+            <span class="avatar">
+              <a class="avatar__link" href="#" target="_blank">
+                <img src="" alt="flaviocopes">
+              </a>
+            </span>
+            <span class="avatar">
+              <a class="avatar__link" href="#" target="_blank">
+                <img src="" alt="flaviocopes">
+              </a>
+            </span>
+            <span class="avatar">
+              <a class="avatar__link" href="#" target="_blank">
+                <img src="" alt="flaviocopes">
+              </a>
+            </span>
+            <span class="avatar">
+              <a class="avatar__link" href="#" target="_blank">
+                <img src="" alt="">
+              </a>
+            </span>
+            <span class="avatar">
+              <a class="avatar__link" href="#" target="_blank">
+                <img src="" alt="flaviocopes">
+              </a>
+            </span>
+          </div>
+        </dd>
+
+        <dt class="text-sm-medium">Contribute</dt>
+        <dd class="text-sm-semibold">
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7 0C3.1325 0 0 3.1325 0 7C0 10.0975 2.00375 12.7137 4.78625 13.6413C5.13625 13.7025 5.2675 13.4925 5.2675 13.3088C5.2675 13.1425 5.25875 12.5913 5.25875 12.005C3.5 12.3288 3.045 11.5763 2.905 11.1825C2.82625 10.9812 2.485 10.36 2.1875 10.1937C1.9425 10.0625 1.5925 9.73875 2.17875 9.73C2.73 9.72125 3.12375 10.2375 3.255 10.4475C3.885 11.5062 4.89125 11.2088 5.29375 11.025C5.355 10.57 5.53875 10.2638 5.74 10.0887C4.1825 9.91375 2.555 9.31 2.555 6.6325C2.555 5.87125 2.82625 5.24125 3.2725 4.75125C3.2025 4.57625 2.9575 3.85875 3.3425 2.89625C3.3425 2.89625 3.92875 2.7125 5.2675 3.61375C5.8275 3.45625 6.4225 3.3775 7.0175 3.3775C7.6125 3.3775 8.2075 3.45625 8.7675 3.61375C10.1063 2.70375 10.6925 2.89625 10.6925 2.89625C11.0775 3.85875 10.8325 4.57625 10.7625 4.75125C11.2087 5.24125 11.48 5.8625 11.48 6.6325C11.48 9.31875 9.84375 9.91375 8.28625 10.0887C8.54 10.3075 8.75875 10.7275 8.75875 11.3837C8.75875 12.32 8.75 13.0725 8.75 13.3088C8.75 13.4925 8.88125 13.7113 9.23125 13.6413C10.6209 13.1721 11.8284 12.279 12.6839 11.0877C13.5393 9.89631 13.9996 8.46668 14 7C14 3.1325 10.8675 0 7 0Z" fill="#2C3437"/>
+          </svg>
+          <a class="text-decoration" href="">Edit this page</a>
+        </dd>
+
+        <dt class="text-sm-medium">Table of Contents</dt>
+        <dd class="text-sm-semibold">
+          <a class="text-decoration" href="">An Example Node.js Application</a>
+        </dd>
+      </dl>
+    </div>
+    </section>
+
+    <nav class="breadcrumb" aria-label="breadcrumb">
+      <ul class="breadcrumb__list">
+        <li class="breadcrumb__item">
+          <a class="breadcrumb__link" href="" aria-label="Navigate to home">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2.5 8.80433C2.5 8.3257 2.5 8.08639 2.56169 7.866C2.61633 7.67078 2.70614 7.48716 2.82669 7.32417C2.96278 7.14017 3.15168 6.99324 3.52949 6.69939L9.18141 2.30345C9.47418 2.07574 9.62057 1.96189 9.78221 1.91812C9.92484 1.87951 10.0752 1.87951 10.2178 1.91812C10.3794 1.96189 10.5258 2.07574 10.8186 2.30345L16.4705 6.69939C16.8483 6.99324 17.0372 7.14017 17.1733 7.32417C17.2939 7.48716 17.3837 7.67078 17.4383 7.866C17.5 8.08639 17.5 8.3257 17.5 8.80433V14.8334C17.5 15.7669 17.5 16.2336 17.3183 16.5901C17.1586 16.9037 16.9036 17.1587 16.59 17.3185C16.2335 17.5001 15.7668 17.5001 14.8333 17.5001H5.16667C4.23325 17.5001 3.76654 17.5001 3.41002 17.3185C3.09641 17.1587 2.84144 16.9037 2.68166 16.5901C2.5 16.2336 2.5 15.7669 2.5 14.8334V8.80433Z" stroke="#556066" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 12L10 8L6 4" stroke="#929FA5" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </li>
+
+        <li class="breadcrumb__item">
+          <a class="breadcrumb__link text-sm-medium" href="">Learn</a>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 12L10 8L6 4" stroke="#929FA5" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </li>
+
+        <li class="breadcrumb__item">
+          <a class="breadcrumb__link text-sm-medium" href="">Getting Started</a>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 12L10 8L6 4" stroke="#929FA5" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </li>
+
+        <li class="breadcrumb__item">
+          <a class="breadcrumb__link breadcrumb__link--active text-sm-semibold" href="">Introduction to Node.js</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</body>
+</html>

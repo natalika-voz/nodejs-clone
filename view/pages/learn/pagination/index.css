@@ -1,0 +1,11 @@
+.learn-pagination {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.learn-pagination__link {
+  display: inline-flex;
+  padding: 12px;
+  border: 1px solid var(--neutral-300);
+}
