@@ -5,6 +5,12 @@
 /* blocks */
 @import url("./view/header/index.css");
 @import url("./view/search-form/index.css");
-@import url("./view/hero/index.css");
 @import url("./view/button/index.css");
 @import url("./view/footer/index.css");
+@import url("./view/select/index.css");
+@import url("./view/metabar/index.css");
+/* pages */
+@import url("./view/pages/home/hero/index.css");
+@import url("./view/pages/learn/pagination/index.css");
+@import url("./view/pages/learn/navigation/index.css");
+@import url("./view/pages/learn/learn-container/");
