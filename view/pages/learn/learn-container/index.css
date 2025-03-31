@@ -2,6 +2,25 @@
   @media (width >= 1024px) {
     display: grid;
     grid-template-columns: 1fr 2.5fr 1fr;
-    gap: 48px;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+    "select main metabar"
+    ". breadcrumb ."; /* Breadcrumb занимает всю ширину средней колонки */
   }
+}
+
+.select {
+  grid-area: select;
+}
+
+.main--text {
+  grid-area: main;
+}
+
+.metabar {
+  grid-area: metabar;
+}
+
+.breadcrumb {
+  grid-area: breadcrumb;
 }

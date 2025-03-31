@@ -20,15 +20,17 @@ html, body {
   flex: 1;  /* Этот блок занимает все доступное пространство */
 }
 
+.main--home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .main--text {
   display: flex;
   flex-direction: column;
   gap: 16px;
   padding: 16px;
-}
-
-.main--text p {
-  color: var(--neutral-900);
 }
 
 .h1 {

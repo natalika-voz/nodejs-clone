@@ -1,0 +1,15 @@
+.about-code-block {
+  @media (width >= 1024px) {
+    max-width: 624px;
+  }
+}
+
+.about__code {
+  margin-block-end: 16px;
+  min-height: 432px;
+  background-color: black;
+}
+
+.about__text {
+  color: var(--neutral-800);
+}

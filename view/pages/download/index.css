@@ -1,0 +1,20 @@
+.download__text {
+  color: var(--neutral-800);
+}
+
+.download-code-block {
+  @media (width >= 1024px) {
+    max-width: 624px;
+  }
+}
+
+.download__code {
+  margin-block-end: 16px;
+  min-height: 368px;
+  background-color: black;
+}
+
+.download__code-text {
+  text-align: center;
+  color: var(--neutral-800);
+}

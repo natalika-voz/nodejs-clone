@@ -5,6 +5,7 @@
     align-items: center;
     gap: 32px;
     padding-inline: 32px;
+    border-bottom: 1px solid var(--neutral-200);
   }
 }
 
@@ -95,9 +96,9 @@
 .header__link--arrow {
   background-image: url(/view/header/arrow.svg);
   background-repeat: no-repeat;
-  background-position: top 50% left 90px;
+  background-position: top 50% left 115px;
 
-  @media (width > 1439px) {
+  @media (width >= 1024px) {
     background-position: top 50% right 5px;
     padding-right: 25px;
     background-position: top 50% calc(100% - 5px);
@@ -114,7 +115,7 @@
     flex-wrap: nowrap;
   }
 
-  @media (width > 1024px) {
+  @media (width >= 1024px) {
     flex-basis: 380px;
     border: none;
     padding: 0;
@@ -126,7 +127,7 @@
   align-items: center;
   gap: 8px;
 
-  @media (width > 1439px) {
+  @media (width >= 1024px) {
     padding-block-start: 0;
   }
 }

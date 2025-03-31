@@ -11,6 +11,9 @@
 @import url("./view/metabar/index.css");
 /* pages */
 @import url("./view/pages/home/hero/index.css");
+@import url("./view/pages/learn/index.css");
 @import url("./view/pages/learn/pagination/index.css");
 @import url("./view/pages/learn/navigation/index.css");
-@import url("./view/pages/learn/learn-container/");
+@import url("./view/pages/learn/learn-container/index.css");
+@import url("./view/pages/about/index.css");
+@import url("./view/pages/download/index.css");

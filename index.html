@@ -11,9 +11,9 @@
     <div id="app">
       <header class="header">
         <div class="header__logo-and-toggler">
-          <a class="header__logo" href="#">
-            <img class="header__logo-image" src="./view/header/node-js.svg" width="80" height="24" alt="Node Js Website Logo">
-          </a>
+          <span class="header__logo">
+            <img class="header__logo-image" src="./view/header/node-js.svg" width="80" height="24" alt="Node.js logo">
+          </span>
           <button class="header__toggle-menu" type="button" aria-label="Open mobile menu" aria-expanded="true">
             <svg width="24" height="24" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M1 7H19M1 1H19M1 13H19" stroke="#2C3437" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -22,21 +22,20 @@
               <path d="M18.7071 6.70711C19.0976 6.31658 19.0976 5.68342 18.7071 5.29289C18.3166 4.90237 17.6834 4.90237 17.2929 5.29289L12 10.5858L6.70711 5.29289C6.31658 4.90237 5.68342 4.90237 5.29289 5.29289C4.90237 5.68342 4.90237 6.31658 5.29289 6.70711L10.5858 12L5.29289 17.2929C4.90237 17.6834 4.90237 18.3166 5.29289 18.7071C5.68342 19.0976 6.31658 19.0976 6.70711 18.7071L12 13.4142L17.2929 18.7071C17.6834 19.0976 18.3166 19.0976 18.7071 18.7071C19.0976 18.3166 19.0976 17.6834 18.7071 17.2929L13.4142 12L18.7071 6.70711Z" fill="#2C3437"/>
             </svg>
           </button>
-
         </div>
         <nav class="header__nav">
           <ul class="header__list" role="list">
             <li>
-              <a class="header__link text-base-medium" href="#">Learn</a>
+              <a class="header__link text-base-medium" href="/learn.html">Learn</a>
             </li>
             <li>
-              <a class="header__link text-base-medium" href="#">About</a>
+              <a class="header__link text-base-medium" href="/about.html">About</a>
             </li>
             <li>
               <a class="header__link text-base-medium" href="#">Docs</a>
             </li>
             <li>
-              <a class="header__link text-base-medium" href="#">Download</a>
+              <a class="header__link text-base-medium" href="/download.html">Download</a>
             </li>
             <li>
               <a class="header__link text-base-medium" href="#">Blog</a>
@@ -75,21 +74,25 @@
         </nav>
       </header>
 
-      <main class="main">
+      <main class="main main--home">
         <section class="hero">
-          <h1 class="hero__title">Run JavaScript Everywhere</h1>
-          <p class="hero__text">Node.js is a free, open-sourced, cross-platform JavaScript run-time environment that lets developers write command line tools and server-side scripts outside of a browser.</p>
-          <a class="button" href="https://nodejs.org/en" role="button" tabindex="0">Download Node (LTS)</a>
-          <a class="hero__link" href="#">Learn more</a>
-          <div class="tabsRoot">
-            <div class="tabsList"></div>
-            <div class="codeBox">
-              <div class="codeBox__content"></div>
-              <div class="codeBox__footer"></div>
+          <div class="hero__inner">
+            <h1 class="hero__title">Run JavaScript Everywhere</h1>
+            <p class="hero__text">Node.js is a free, open-sourced, cross-platform JavaScript run-time environment that lets developers write command line tools and server-side scripts outside of a browser.</p>
+            <div class="hero__actions">
+              <a class="button" href="https://nodejs.org/en" role="button" tabindex="0">Download Node (LTS)</a>
+              <a class="hero__link" href="#">Learn more</a>
             </div>
           </div>
+
+          <div class="hero-code-block">
+            <div class="hero__code"></div>
+            <p class="hero__code-text text-sm-medium">Learn more what Node.js is able to offer with our <a href="/learn">Learning materials</a>.</p>
+          </div>
+
         </section>
       </main>
+
       <footer class="footer">
         <div class="footer__section-primary">
           <a class="footer__link text-base-medium" href="#">Trademark Policy</a>
@@ -98,7 +101,7 @@
           <a class="footer__link text-base-medium" href="#">Security</a>
         </div>
         <div class="footer__section-secondary">
-          <a class="footer__link" href="#">© OpenJS Foundation</a>
+          <a class="footer__link text-base-medium" href="#">© OpenJS Foundation</a>
           <div class="footer__socials">
             <a class="footer__social" href="" aria-label="Node.js Github">
               <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">

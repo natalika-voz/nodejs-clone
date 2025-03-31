@@ -1,0 +1,11 @@
+.select {
+  display: inline-block;
+  padding: 24px;
+  width: auto;
+  height: auto;
+  color:blueviolet;
+
+  @media (width >= 1024px) {
+    border-right: 1px solid var(--neutral-200);
+  }
+}
