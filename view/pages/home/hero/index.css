@@ -16,9 +16,9 @@
     justify-content: center;
     padding-inline: 112px;
     gap: 56px;
-    background-image: url("/view/pages/home/hero/group-desktop.png");
+    background-image: url("./group-desktop.png");
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
   }
 }
