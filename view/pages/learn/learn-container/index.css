@@ -5,7 +5,7 @@
     grid-template-rows: auto auto;
     grid-template-areas:
     "select main metabar"
-    ". breadcrumb ."; /* Breadcrumb занимает всю ширину средней колонки */
+    "select breadcrumb metabar";
   }
 }
 
