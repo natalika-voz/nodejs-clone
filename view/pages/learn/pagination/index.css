@@ -4,8 +4,43 @@
   gap: 16px;
 }
 
-.learn-pagination__link {
+/* .learn-pagination__link {
   display: inline-flex;
   padding: 12px;
   border: 1px solid var(--neutral-300);
+} */
+
+.learn-pagination__link {
+  display: flex;
+  flex-direction: column;
+  text-overflow: ellipsis;
+  padding: 12px;
+  align-items: flex-start;
+  gap: 10px;
+  border: 1px solid var(--neutral-300);
+  overflow: hidden;
+}
+
+.learn-pagination__link-text {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  color: var(--neutral-800);
+}
+
+.learn-pagination__icon {
+  width: 16px;
+  height: 16px;
+  color: var(--neutral-800);
+}
+
+.learn-pagination__link-label {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--neutral-900);
+  text-align: right;
+  overflow: hidden;
+  align-self: stretch;
 }

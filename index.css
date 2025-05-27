@@ -9,7 +9,9 @@
 @import url("./view/footer/index.css");
 @import url("./view/select/index.css");
 @import url("./view/metabar/index.css");
-/* pages */
+@import url("./view/main/index.css");
+
+/*pages */
 @import url("./view/pages/home/hero/index.css");
 @import url("./view/pages/learn/index.css");
 @import url("./view/pages/learn/pagination/index.css");
@@ -19,3 +21,5 @@
 @import url("./view/pages/download/index.css");
 @import url("./view/pages/about/about-container/index.css");
 @import url("./view/pages/download/download-container/index.css");
+@import url("./view/pages/blog/index.css");
+@import url("./view/pages/blog-post/index.css");

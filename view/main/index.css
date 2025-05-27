@@ -1,0 +1,28 @@
+.main {
+  flex: 1; /* Этот блок занимает все доступное пространство */
+}
+
+.main--home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main--text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+}
+
+.main--blog {
+  @media (width >= 1024px) {
+    padding: 48px 112px;
+  }
+}
+
+.main--blog__inner {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
