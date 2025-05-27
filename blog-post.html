@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./index.css" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Node Js</title>
+</head>
+<body>
+  <div id="app">
+    <template data-type="pug" data-src="/view/header/index.pug"></template>
+
+    <section class="blog-post__container">
+      <div class="main main--text main--blog">
+        <h1 class="blog-post__title h1 text-2xl-semibold">OpenSSL update assessment, and Node.js project plans</h1>
+        <div class="blog-post-card__image"></div>
+        <h2 class="text-2xl-semibold">Summary</h2>
+        <p class="blog-post__text text-base-regular">The vulnerabilities in the OpenSSL Security releases of Jun 21 2022 do not affect any active Node.js release lines.</p>
+        <h2 class="text-2xl-semibold">Analysis</h2>
+        <p class="blog-post__text text-base-regular">Our assessment of the <a class="blog-post__link" href="/">security advisory</a> is:</p>
+        <p class="blog-post__text text-xl-semibold">The c_rehash script allows command injection (CVE-2022-2068)</p>
+        <p class="blog-post__text text-base-regular">Node.js doesn't use or ship the c_rehash script. Therefore, Node.js is not affected</p>
+        <h3 class="text-xl-semibold">Contact and future updates</h3>
+        <p class="blog-post__text text-base-regular">The current Node.js security policy can be found at <a class="blog-post__link" href="/">https://github.com/nodejs/node/blob/HEAD/SECURITY.md#security</a>, including information on how to report a vulnerability in Node.js.</p>
+        <p class="blog-post__text text-base-regular">Subscribe to the low-volume announcement-only nodejs-sec mailing list at <a class="blog-post__link" href="/">https://groups.google.com/forum/#!forum/nodejs-sec</a> to stay up to date on security vulnerabilities and security-related releases of Node.js and the projects maintained in the <a class="blog-post__link" href="/">nodejs GitHub organization</a>.</p>
+
+        <div class="blog-post-pagination">
+          <a class="blog-post-pagination__link" href="">
+            <span class="blog-post-pagination__link-text text-sm-medium">
+              <svg class="blog-pos-pagination__icon blog-pos-pagination__icon--rotated" width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 9L5 5L1 1" stroke="#929FA5" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>Prev
+            </span>
+
+            <span class="blog-post-pagination__link-label text-sm-regular">Node v16.20.0 (LTS)</span>
+          </a>
+
+          <a class="blog-post-pagination__link blog-post-pagination__link--next" href="">
+            <span class="blog-post-pagination__link-text blog-post-pagination__link-text--next text-sm-medium">
+              <svg class="blog-post-pagination__icon" width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 9L5 5L1 1" stroke="#929FA5" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Next</span>
+
+              <span class="blog-post-pagination__link-label text-sm-regular">Node v19.8.1 (Current)</span>
+            </a>
+        </div>
+      </div>
+
+
+      <div class="metabar">
+        <dl>
+          <dt class="text-sm-medium">Published</dt>
+          <dd class="text-sm-regular">July 9, 2023</dd>
+
+          <dt class="text-sm-medium">Reading Time</dt>
+          <dd class="text-sm-regular">15 minutes</dd>
+
+          <dt class="text-sm-medium">Authors</dt>
+          <dd class="text-sm-regular">The Node.js Project</dd>
+
+          <dt class="text-sm-medium">Table of Contents</dt>
+          <dd class="text-sm-semibold">
+            <a class="text-decoration" href="">Summary</a>
+          </dd>
+          <dd class="text-sm-semibold">
+            <a class="text-decoration" href="">Analysis</a>
+          </dd>
+        </dl>
+      </div>
+
+    </section>
+    <template data-type="pug" data-src="/view/footer/index.pug"></template>
+  </div>
+</body>
+</html>
